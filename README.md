@@ -42,33 +42,7 @@ The project structure is organized as follows:
 
 ## Usage
 
-You can use these drivers to interface with the STM32F103x6 microcontroller peripherals. Here's a basic example of how to use the GPIO driver to toggle an LED:
-
-```c
-#include "Stm32_F103C6_GPIO_driver.h"
-
-int main(void) {
-    // Initialize GPIO for an LED connected to pin GPIO_PIN_13
-    GPIO_Handle_t gpioLed;
-    gpioLed.pGPIOx = GPIOA; // Change to the appropriate GPIO port
-    gpioLed.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_13;
-    gpioLed.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT_PP;
-    gpioLed.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_HIGH;
-
-    GPIO_Init(&gpioLed);
-
-    while (1) {
-        // Toggle the LED
-        GPIO_TogglePin(GPIOA, GPIO_PIN_13);
-
-        // Delay for some time
-        for (int i = 0; i < 100000; i++);
-    }
-
-    return 0;
-}
-```
-
+You can use these drivers to interface with the STM32F103x6 microcontroller peripherals.
 Make sure to configure your development environment and toolchain to compile and flash this code onto your STM32F103x6 microcontroller.
 
 ## Contributing
