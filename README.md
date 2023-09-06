@@ -20,13 +20,16 @@ The project structure is organized as follows:
 
 ├── Stm32_F103C6_EXTI_driver.c
 ├── Stm32_F103C6_GPIO_driver.c
+
 ├── inc
 │ ├── Stm32_F103C6_EXTI_driver.h
 │ ├── Stm32_F103C6_gpio_driver.h
 │ └── stm32f103x6.h
+
 ├── KEYPAD_DRIVER
 │ ├── keypad.c
 │ └── keypad.h
+
 ├──  LCD_DRIVER
 │ ├── lcd.c
 │ └── lcd.h
