@@ -33,7 +33,6 @@ The project structure is organized as follows:
 ├──  LCD_DRIVER
 │ ├── lcd.c
 │ └── lcd.h
-└──
 
 
 - `Stm32_F103C6_EXTI_driver.c` and `Stm32_F103C6_GPIO_driver.c` contain the implementation of the EXTI and GPIO drivers.
