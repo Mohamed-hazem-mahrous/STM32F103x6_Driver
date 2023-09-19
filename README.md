@@ -12,38 +12,45 @@ This repository contains drivers for the STM32F103x6 microcontroller.
 
 ## Overview
 
-The STM32F103x6 Driver is a collection of drivers for various peripherals of the STM32F103x6 microcontroller. It includes drivers for GPIO, EXTI, keypad, and LCD peripherals.
+The STM32F103x6 Driver is a collection of drivers for various peripherals of the STM32F103x6 microcontroller. It includes drivers for GPIO, EXTI, RCC, USART, keypad, and LCD peripherals.
 
 ## Folder Structure
 
 The project structure is organized as follows:
-
-├── Stm32_F103C6_EXTI_driver.c
-├── Stm32_F103C6_GPIO_driver.c
-
-├── inc
-│ ├── Stm32_F103C6_EXTI_driver.h
-│ ├── Stm32_F103C6_gpio_driver.h
-│ └── stm32f103x6.h
-
-├── KEYPAD_DRIVER
-│ ├── keypad.c
-│ └── keypad.h
-
-├──  LCD_DRIVER
-│ ├── lcd.c
-│ └── lcd.h
+├── MCAL
+│ ├── inc
+│ │  ├── STM32F103x8.h
+│ │  ├── stm32f103x8_EXTI_driver.h
+│ │  ├── stm32f103x8_gpio_driver.h
+│ │  ├── stm32f103x8_USART_driver.h
+│ │  └── stm32f103x8_RCC_driver.h
+│ │
+│ ├── stm32f103x8_EXTI_driver.c
+│ ├── stm32f103x8_gpio_driver.c
+│ ├── stm32f103x8_USART_driver.c
+│ └── stm32f103x8_RCC_driver.c
 
 
-- `Stm32_F103C6_EXTI_driver.c` and `Stm32_F103C6_GPIO_driver.c` contain the implementation of the EXTI and GPIO drivers.
-- The `inc` folder includes header files for the drivers and `stm32f103x6.h`, which defines base addresses and registers for the STM32F103x6 microcontroller.
+├── HAL
+│ ├── KEYPAD_DRIVER
+│ │ ├── keypad.c
+│ │ └── keypad.h
+│ ├──  LCD_DRIVER
+│ │ ├── lcd.c
+│ │ └── lcd.h
+
+
+- `stm32f103x8_EXTI_driver.c` and `stm32f103x8_gpio_driver.c` contain the implementation of the EXTI and GPIO drivers.
+- `stm32f103x8_RCC_driver.h` contain the implementation of the RCC drivers.
+- `stm32f103x8_USART_driver.h` contain the implementation of the USART drivers.
+- The `inc` folder includes header files for the drivers and `STM32F103x8.h` which defines base addresses and registers for the STM32F103x6 microcontroller.
 - The `KEYPAD_DRIVER` folder contains the keypad driver implementation.
 - The `LCD_DRIVER` folder contains the LCD driver implementation.
 
 ## Usage
 
 You can use these drivers to interface with the STM32F103x6 microcontroller peripherals.
-Make sure to configure your development environment and toolchain to compile and flash this code onto your STM32F103x6 microcontroller.
+Make sure to configure your development environment and toolchain to compile and flash this code onto your STM32F103x6/x8 microcontroller.
 
 ## Contributing
 Contributions to this project are welcome! If you find a bug or have an enhancement in mind, please open an issue or submit a pull request.

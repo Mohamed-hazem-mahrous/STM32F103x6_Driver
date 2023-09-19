@@ -1,8 +1,9 @@
 #ifndef KEYPAD_H_
 #define KEYPAD_H_
 
-#include "../inc/stm32f103x6.h"
-#include "../inc/Stm32_F103C6_gpio_driver.h"
+
+#include "../../MCAL/inc/STM32F103x8.h"
+#include "../../MCAL/inc/stm32f103x8_gpio_driver.h"
 
 #define KEYPAD_PORT GPIOB
 
