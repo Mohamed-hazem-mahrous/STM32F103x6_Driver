@@ -17,28 +17,28 @@ The STM32F103x6 Driver is a collection of drivers for various peripherals of the
 ## Folder Structure
 
 The project structure is organized as follows:
-├── MCAL
-│ ├── inc
-│ │  ├── STM32F103x8.h
-│ │  ├── stm32f103x8_EXTI_driver.h
-│ │  ├── stm32f103x8_gpio_driver.h
-│ │  ├── stm32f103x8_USART_driver.h
-│ │  └── stm32f103x8_RCC_driver.h
-│ │
-│ ├── stm32f103x8_EXTI_driver.c
-│ ├── stm32f103x8_gpio_driver.c
-│ ├── stm32f103x8_USART_driver.c
-│ └── stm32f103x8_RCC_driver.c
+### MCAl
+#### Includes
+- STM32F103x8.h
+- stm32f103x8_EXTI_driver.h
+- stm32f103x8_gpio_driver.h
+- stm32f103x8_USART_driver.h
+- stm32f103x8_RCC_driver.h
+#### Implementation
+- stm32f103x8_EXTI_driver.c
+- stm32f103x8_gpio_driver.c
+- stm32f103x8_USART_driver.c
+- stm32f103x8_RCC_driver.c
 
+### HAL
+#### KEYPAD_DRIVER
+- keypad.c
+- keypad.h
+#### LCD_DRIVER
+- lcd.c
+- lcd.h
 
-├── HAL
-│ ├── KEYPAD_DRIVER
-│ │ ├── keypad.c
-│ │ └── keypad.h
-│ ├──  LCD_DRIVER
-│ │ ├── lcd.c
-│ │ └── lcd.h
-
+### Info
 
 - `stm32f103x8_EXTI_driver.c` and `stm32f103x8_gpio_driver.c` contain the implementation of the EXTI and GPIO drivers.
 - `stm32f103x8_RCC_driver.h` contain the implementation of the RCC drivers.
