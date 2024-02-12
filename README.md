@@ -22,13 +22,16 @@ The project structure is organized as follows:
 - STM32F103x8.h
 - stm32f103x8_EXTI_driver.h
 - stm32f103x8_gpio_driver.h
-- stm32f103x8_USART_driver.h
 - stm32f103x8_RCC_driver.h
+- stm32f103x8_USART_driver.h
+- stm32f103x8_SPI_driver.h
 #### Implementation
 - stm32f103x8_EXTI_driver.c
 - stm32f103x8_gpio_driver.c
-- stm32f103x8_USART_driver.c
 - stm32f103x8_RCC_driver.c
+- stm32f103x8_USART_driver.c
+- stm32f103x8_SPI_driver.c
+
 
 ### HAL
 #### KEYPAD_DRIVER
@@ -41,8 +44,9 @@ The project structure is organized as follows:
 ### Info
 
 - `stm32f103x8_EXTI_driver.c` and `stm32f103x8_gpio_driver.c` contain the implementation of the EXTI and GPIO drivers.
-- `stm32f103x8_RCC_driver.h` contain the implementation of the RCC drivers.
-- `stm32f103x8_USART_driver.h` contain the implementation of the USART drivers.
+- `stm32f103x8_RCC_driver.h` contain the implementation of the RCC driver.
+- `stm32f103x8_USART_driver.h` contain the implementation of the USART driver.
+- `stm32f103x8_SPI_driver.h` contain the implementation of the SPI driver.
 - The `inc` folder includes header files for the drivers and `STM32F103x8.h` which defines base addresses and registers for the STM32F103x6 microcontroller.
 - The `KEYPAD_DRIVER` folder contains the keypad driver implementation.
 - The `LCD_DRIVER` folder contains the LCD driver implementation.
