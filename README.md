@@ -12,7 +12,7 @@ This repository contains drivers for the STM32F103x6 microcontroller.
 
 ## Overview
 
-The STM32F103x6 Driver is a collection of drivers for various peripherals of the STM32F103x6 microcontroller. It includes drivers for GPIO, EXTI, RCC, USART, keypad, and LCD peripherals.
+The STM32F103x6 Driver is a collection of drivers for various peripherals of the STM32F103x6 microcontroller. It includes drivers for GPIO, EXTI, RCC, USART, keypad, LCD and Servo Motor peripherals.
 
 ## Folder Structure
 
@@ -40,6 +40,9 @@ The project structure is organized as follows:
 #### LCD_DRIVER
 - lcd.c
 - lcd.h
+#### Servo Motor
+- servo.c
+- servo.h
 
 ### Info
 
@@ -50,6 +53,8 @@ The project structure is organized as follows:
 - The `inc` folder includes header files for the drivers and `STM32F103x8.h` which defines base addresses and registers for the STM32F103x6 microcontroller.
 - The `KEYPAD_DRIVER` folder contains the keypad driver implementation.
 - The `LCD_DRIVER` folder contains the LCD driver implementation.
+- The `Servo Motor` folder contains the Servo Motor driver implementation.
+
 
 ## Usage
 
